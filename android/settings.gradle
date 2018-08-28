@@ -1,0 +1,3 @@
+rootProject.name = 'hello8'
+
+include ':app'
