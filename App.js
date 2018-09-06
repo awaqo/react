@@ -8,6 +8,7 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Image} from 'react-native';
+import Judul from './Component/Judul';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -16,11 +17,13 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-type Props = {};
-export default class App extends Component<Props> {
+
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Judul title="BIODATA"/>
+        <Judul title="LOGIN"/>
         <Text>Nama : Aqil Jawadal Furqon</Text>
         <Text>Kelas : XI RPL 3</Text>
         <Text>No Absen : 08</Text>
