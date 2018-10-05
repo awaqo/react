@@ -7,7 +7,7 @@ import {
   TouchableOpacity 
 } from 'react-native';
 
-export default class Logo extends Component<{}> {
+export default class Logo extends Component {
 
 	render(){
 		return(
@@ -29,7 +29,8 @@ export default class Logo extends Component<{}> {
               />  
            <TouchableOpacity style={styles.button}>
              <Text style={styles.buttonText}>{this.props.type}</Text>
-           </TouchableOpacity>     
+           </TouchableOpacity>
+           <Text style={styles.logoText}>Forgot your password?</Text>     
   		</View>
 			)
 	}
@@ -45,16 +46,16 @@ const styles = StyleSheet.create({
   inputBox: {
     width:300,
     backgroundColor:'rgba(255, 255,255,0.2)',
-    borderRadius: 25,
+    borderRadius: 5,
     paddingHorizontal:16,
     fontSize:16,
     color:'#ffffff',
-    marginVertical: 10
+    marginVertical: 8
   },
   button: {
     width:300,
-    backgroundColor:'#1c313a',
-     borderRadius: 25,
+    backgroundColor:'#133F6F',
+     borderRadius: 10,
       marginVertical: 10,
       paddingVertical: 13
   },
@@ -63,6 +64,12 @@ const styles = StyleSheet.create({
     fontWeight:'500',
     color:'#ffffff',
     textAlign:'center'
+  },
+
+  logoText : {
+  	marginVertical: 15,
+  	fontSize:18,
+  	color:'rgba(255, 255, 255, 0.7)'
   }
   
 });

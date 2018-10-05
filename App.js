@@ -16,7 +16,7 @@ export default class App extends Component {
     return (
           <View style={styles.container}>
             <StatusBar
-              backgroundColor="#1c313a"
+              backgroundColor="#2B4D91"
               barStyle="light-content"
             />
             <Login/>
@@ -28,6 +28,5 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor:'#455a64',
   },
   });
